@@ -1,0 +1,35 @@
+NAME: Seokmin (Lewis) Hong
+EMAIL: smlewishong@gmail.com
+ID: 904645894
+
+lab0.c: includes source code that reads from stdin and writes to stdout. uses
+getopt_long to check for special options. --input is used to specify an input
+file and --output is used to specify an output file. --segfault forces a
+segmentation fault and --catch catches it.
+
+Makefile:
+  default: compile lab0.c using gcc
+  check: checked lab0 for very basic tests that just check each of the error
+  codes.
+  clean: remove the executable and tar file created by dist
+  dist: create tarball with lab0.c, Makefile, README, breakpoint.png, and
+  backtrace.png
+
+breakpoint.png: screenshot showing that the segmentation fault goes to a null
+pointer
+
+bakctrace.png: screenshot showing a segfault and the associate backtrace
+
+resources:
+http://web.cs.ucla.edu/classes/spring17/cs111/projects/fd_juggling.html
+http://mrbook.org/blog/tutorials/make/
+http://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/
+https://www.gnu.org/software/make/manual/make.html
+https://en.wikipedia.org/wiki/Make_(software)
+https://www.gnu.org/software/libc/manual/html_node/Getopt-Long-Options.html
+https://www.gnu.org/software/libc/manual/html_node/Getopt-Long-Option-Example.html
+http://www.techytalk.info/linux-system-programming-open-file-read-file-and-write-file/
+
+worked collaboratively with Michael Jung, Rohan Varma, Dmitri Brereton, and
+Parsh Ingle.
+
